@@ -66,6 +66,22 @@ footer .container {
 	width: 940px;
 	}
 
+.busca {
+	border-top-left-radius:4px;
+	border-top-right-radius: 4px;	
+
+}
+
+.busca button {
+	background-image: url(../img/busca.png);
+	background-repeat: no-repeat;
+	border: none;
+
+	width: 20px;
+	height: 20px;
+	text-indent: -99999;
+
+}
 
 .busca,
 .menu-departamentos{
@@ -85,14 +101,11 @@ footer .container {
 	margin: 10px;
 
 }
-.busca {
-	border-top-left-radius:4px;
-	border-top-right-radius: 4px;	
 
-}
 .busca input[type=search]{
 	width: 170px;
 }
+
 .destaque{
 	margin-top: 10px;
 }
@@ -218,57 +231,47 @@ footer .container {
 			background-image:	url(../img/googleplus.png);
 	}
 
-.busca button {
-	background-image: url(../img/busca.png);
-	background-repeat: no-repeat;
-	border: none;
-
-	width: 20px;
-	height: 20px;
-	text-indent: -99999;
-
-}
 
 @media (max-widht:320px) {
 	width: 96%;
 
-header h1{
-	text-align: center;
+	header h1{
+		text-align: center;
 
-}
-header h1 img{
-	max-width: 50%
-}
-.sacola{
-	display: none;
-}
-.menu-opcoes{
-	position: static;
-	text-align: center;
+	}
+	header h1 img{
+		max-width: 50%
+	}
+	.sacola{
+		display: none;
+	}
+	.menu-opcoes{
+		position: static;
+		text-align: center;
 
-}
+	}
 
-.menu-opcoes ul li {
-	display: inline-block;
-	margin: 5px;
-}
-.busca,
-.menu-departamentos,
-.banner-destaque img {
-	margin-right: 0;
-	width: 100%;
-}
-.painel{
-	width: auto;
-}
-.painel li {
-	width: 30%;
+	.menu-opcoes ul li {
+		display: inline-block;
+		margin: 5px;
+	}
+	.busca,
+	.menu-departamentos,
+	.banner-destaque img {
+		margin-right: 0;
+		width: 100%;
+	}
+	.painel{
+		width: auto;
+	}
+	.painel li {
+		width: 30%;
 
-}
-.painel img {
-	width: 100%;
+	}
+	.painel img {
+		width: 100%;
 
-}
+	}
 
 
 }
