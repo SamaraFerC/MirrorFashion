@@ -60,7 +60,8 @@
 									<dd>R$129,90</dd>
 							</dl>
 						</div>
-					</div>
+					</div> 
+
 
 					<div class="card mb-3">
 						<div class="card-body">
@@ -79,73 +80,89 @@
 						<output for="qtd preco" id="total" class="form-control">129,90</output>
 
 					</div>
-					
+				</div>
 						<form class="col-md-8">
-							<div class="col-lg-6">
-								<fieldset class="col-lg-6">
-									<legend>Dados pessoais</legend>
-									<div class="form-group">
-										<label for="nome">Nome completo</label>
-										<input type="text" id="nome" class="form-control" name="name"autofocus required>
-									</div>
-
-									<div	class="form-group">
-										<label	for="email">Email</label>
-											<div	class="input-group	mb-3">
-											<div	class="input-group-prepend">
-												<span	class="input-group-text">@</span>
-											</div>
-									<input	type="email" class="form-control" id="email" name="email" placeholder="email@exemplo.com">
-										</div>
-									</div>
-
-
-									<div class="form-group">
-										<label for="cpf">CPF</label>
-										<input type="text" name="cpf" id="cpf" class="form-control" placeholder="000.000.000-00" data-mask="999.999.999-99">
-									</div>
-
-									<div class="form-group custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-label" name="" for="newsletter" value="sim" checked>								
-										<label class="custom-control-label" for="newsletter">Quero receber Nesletter da Fashion Mirror</label>
-									</div>
-								</fieldset>
-
-								<fieldset class="col-lg-6">
-									<legend>Cartão de crédtio</legend>
+							<div class="row">
+									<fieldset class="col-lg-6">
+										<legend>Dados pessoais</legend>
+										
 										<div class="form-group">
-											<label for="numero-cartao">Número- CVV</label>
-											<input type="text" name="numero-cartao" id="numero-cartao" class="form-control" data-mask="9999	9999 9999 9999 - 999">
-										</div>
-							
-										<div	class="form-group">
-											<div	class="input-group	mb-3">
-												<div	class="input-group-prepend">
-													<label	class="input-group-text" for="bandeira-cartao">Bandeira</label>
+												<div class="input-group	mb-3">
+													<div class="input-group-prepend">
+														<label class="input-group-text" for="nome">Nome</label>
+													</div>
+												 <input type="text"  id="nome "name="name"  class="form-control"autofocus required>
 												</div>
-												<select	class="custom-select" id="bandeira-cartao">
-													<option	disabled selected>Selecione	uma	opção...</option>
-													<option	value="master">MasterCard</option>
-													<option	value="visa">VISA</option>
-													<option	value="amex">American	Express</option>
-												</select>
-											</div>
-									
-									</div>
+										</div>
 
+
+										<div	class="form-group">
+											<label	for="email">Email</label>
+												<div	class="input-group	mb-3">
+												<div	class="input-group-prepend">
+													<span	class="input-group-text">@</span>
+												</div>
+											<input	type="email" class="form-control" id="email" name="email" placeholder="email@exemplo.com">
+											</div>
+										</div>
 
 										<div class="form-group">
-											<label for="validade-cartao">Validade</label>
-											<input type="month" class="form-control" id="validade-cartao" name="validade-cartao" >
+												<div class="input-group	mb-3">
+													<div class="input-group-prepend">
+														<label class="input-group-text" for="cpf">CPF</label>
+													</div>
+												<input type="text" name="numero-cartao" id="numero-cartao" class="form-control" <input type="text" name="cpf" id="cpf" class="form-control" placeholder="000.000.000-00" data-mask="999.999.999-99">
+												</div>
 										</div>
-								</fieldset>
+
+										<div class="form-group custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-label" name="" for="newsletter" value="sim" checked>								
+											<label class="custom-control-label" for="newsletter">Quero receber Nesletter da Fashion Mirror</label>
+										</div>
+									</fieldset>
+
+									<fieldset class="col-lg-6">
+										<legend>Cartão de crédtio</legend>
+											<div class="form-group">
+												<div class="input-group	mb-3">
+													<div class="input-group-prepend">
+														<label class="input-group-text" for="numero-cartao">Número- CVV</label>
+													</div>
+												<input type="text" name="numero-cartao" id="numero-cartao" class="form-control" data-mask="9999	9999 9999 9999 - 999">
+												</div>
+											</div>
+
+											<div class="form-group">
+												<div class="input-group	mb-3">
+													<div class="input-group-prepend">
+														<label	class="input-group-text" for="bandeira-cartao">Bandeira</label>
+													</div>
+													<select	class="custom-select" id="bandeira-cartao">
+														<option	disabled selected>Selecione	uma	opção...</option>
+														<option	value="master">MasterCard</option>
+														<option	value="visa">VISA</option>
+														<option	value="amex">American	Express</option>
+													</select>
+												</div>
+											</div>
+
+											<div class="form-group">
+												<div class="input-group	mb-3">
+													<div class="input-group-prepend">
+														<label class="input-group-text" for="validade-cartao">Validade</label>
+													</div>
+													<input type="month" class="form-control " id="validade-cartao" name="validade-cartao" >
+												</div>
+											</div>
+
+									</fieldset>
 							
 								<button type="submit" class="btn-lg btn btn-primary">
 									<span class="oi oi-thumb-up">Confirmar pedido</span>
 								</button>
 							</div>	
 						</form>
-				</div>
+			
 			</div>
 		</div>
 	
