@@ -5,9 +5,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="whidth=device-widht">
 		<script	type="text/javascript" src="js/jquery.js"></script>
-		<script	type="text/javascript" src="js/home.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link	href='http://fonts.googleapis.com/css?family=PT+Sans|Bad+Script'rel='stylesheet'>
+		<script	type="text/javascript" src="js/banner.js"></script>
+
 		<title> Mirror Fashion </title>
 	</head>
 	<body>
@@ -75,7 +77,7 @@
 		</div><!-- fim .container . destaque -->
 
 		<div class="container paineis ">
-			<section class="painel novidades ">
+			<section class="painel novidades  ">
 				<h2> Novidades</h2>
 				<ol>
 					<!-- primeiros 6 produtos -->
@@ -105,7 +107,7 @@
 							</figure>
 					</li>
 
-						<li><!--3  -->
+					<li><!--3  -->
 						<a href="produto.html"></a>	
 							<figure>
 								<img src="img/produtos/miniatura3.png">	
@@ -113,13 +115,14 @@
 							</figure>
 					</li>
 
-						<li><!-- 9 -->
+					<li><!-- 9 -->
 						<a href="produto.html"></a>	
 							<figure>
 								<img src="img/produtos/miniatura10.png">
 								<figcaption> Fuzz Cardigan por $129,90</figcaption>
 							</figure>
 					</li>
+					
 					<li><!-- 4 -->
 						<a href="produto.html"></a>	
 							<figure>
@@ -130,7 +133,7 @@
 					<!-- primeiros 6 produtos -->
 						
 					<!-- outros 6 -->
-						<li><!--3  -->
+					<li><!--3  -->
 						<a href="produto.html"></a>	
 							<figure>
 								<img src="img/produtos/miniatura3.png">	
@@ -138,13 +141,14 @@
 							</figure>
 					</li>
 
-						<li><!-- 9 -->
+					<li><!-- 9 -->
 						<a href="produto.html"></a>	
 							<figure>
 								<img src="img/produtos/miniatura10.png">
 								<figcaption> Fuzz Cardigan por $129,90</figcaption>
 							</figure>
 					</li>
+
 					<li><!-- 4 -->
 						<a href="produto.html"></a>	
 							<figure>
@@ -297,6 +301,13 @@
 					
 				</ol>
 					<button type="button">Mostrar mais</button>
+					<script type="text/javascript">
+					
+						$('.painel	button').click(function() {
+							$(this).parent().toggleClass('painel-aberto');
+						});
+
+				</script>
 			</section>
 
 		</div>
@@ -312,7 +323,5 @@
 				</ul>	
 			</div>
 		</footer>
-		<script	type="text/javascript" src="js/banner.js"></script>
-
 	</body>
 </html>

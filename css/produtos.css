@@ -1,3 +1,4 @@
+
 table{
 	border-spacing: 0.2em;
 	border-collapse:	separate;
@@ -99,6 +100,7 @@ fieldset{
 	}
 	
 .produto h1	{
+	font-family: "Mali", cursive;
 	font-size: 1.8em;
 	font-weight:	bold;
 }
