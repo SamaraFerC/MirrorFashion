@@ -159,25 +159,21 @@ fieldset{
 	color: #555;
 	}
 
-
-/*medias query*/
-@media	(min-width:	500px)	{
-.detalhes{		
+@media (min-width: 630px){
+	.produto{
+		position: relative;
+		padding-left: 40%;
 		font-size: 1.2em;
-		}
-.cores legend{
-	position: static;
-	top: 0;
-	left: 0;
-	}
-}
 
-@media	(min-width:	600px)	{
-	img	{
-		float:	left;
 	}
-	.cores label img {
-	border: 2px	solid	#CCC;
+	.cores	{
+	position:	static;
+	padding: 0;
+	}
+	.cores legend	{
+	position:	static;
+	}
+	.cores label img	{
 	position:	absolute;
 	top: 0;
 	left: 0;
@@ -185,30 +181,16 @@ fieldset{
 	max-height: 100%;
 
 	}
-	.cores	{
-	position:	static;
-	padding: 0;
-	}	
-	.cores legend	{
-	position:	static;
-	}
-
 	.cores label:after	{
 	position:	static;
 	float:	left;
+	margin-right: 10px;
 	}
-	.produto	{
-	font-size: 1.2em;
-	}
-
-	.cores label::after	{
-					margin-right: 10px;
-	}
-}
-@media (min-width: 630px){
-	.produto{
-		position: relative;
-		padding-left: 40%;
-
+	fieldset	{
+		display:	inline-block;
+		vertical-align:	top;
+		margin: 1em 0;
+		min-width: 240px;
+		width: 45%;
 	}
 }
