@@ -32,27 +32,18 @@ fieldset{
 }
 
 
-}
-.cores legend{
-	position: static;
-	top: 0;
-	left: 0;
-
-}
-
 .cores label img {
 	display:block;
 	max-width: 100%;
-	border: 2px	solid	#CCC;
+	
+}
+.cores legend	{
 	position:	absolute;
 	top: 0;
 	left: 0;
-	max-width: 35%;
-	max-height: 100%;S
 }
-.cores input:checked + label::after{
-	border: 6px	solid rgba(0,0,0,0.3);
-}
+
+
 
 .cores input[type=radio]	{
 	display:none;
@@ -61,17 +52,10 @@ fieldset{
 	display:none;
 }
 
-
-.cores label img {
-	display:block;
-	max-width: 100%;
-	border: 2px	solid	#CCC;
-	position:	absolute;
-	top: 0;
-	left: 0;
-	max-width: 35%;
-	max-height: 100%;S
+.cores input:checked + label::after{
+	border: 6px	solid rgba(0,0,0,0.3);
 }
+
 .cores label::after	{
 	content: '';		
 	display:	block;
@@ -87,7 +71,6 @@ fieldset{
 	box-sizing:	border-box;
 	padding: 0;
 	margin-right: 10px;
-	position:	static;
 	float:	left;
 }
 
@@ -107,14 +90,12 @@ fieldset{
 .cores label:hover::after	{
 	border: 6px	solid	rgba(0,0,0,0.1);
 }
-
 .produto{
-	font-size: 1.2em;
 	color: #333;
 	line-height: 1.3;
 	margin-top: 2em;
-
-}
+	}
+	
 .produto h1	{
 	font-size: 1.8em;
 	font-weight:	bold;
@@ -163,7 +144,16 @@ fieldset{
 	max-width: 36em;
 }
 
-
+.tamanhos output	{
+	display:	inline-block;
+	height: 44px;
+	width: 44px;
+	line-height: 44px;
+	text-align:	center;
+	border: 3px	solid	#666;
+	border-radius: 50%;
+	color: #555;
+	}
 
 
 /*medias query*/
@@ -171,13 +161,47 @@ fieldset{
 .detalhes{		
 		font-size: 1.2em;
 					}
+					.cores legend{
+	position: static;
+	top: 0;
+	left: 0;
+
+}
 	}
 
 @media	(min-width:	600px)	{
 	img	{
 		float:	left;
 	}
+	.cores label img {
+	border: 2px	solid	#CCC;
+	position:	absolute;
+	top: 0;
+	left: 0;
+	max-width: 35%;
+	max-height: 100%;
 
+	}
+	.cores	{
+	position:	static;
+	padding: 0;
+	}	
+	.cores legend	{
+	position:	static;
+	}
+
+	.cores label:after	{
+	position:	static;
+	float:	left;
+	}
+	.produto	{
+	font-size: 1.2em;
+	}
+
+	.cores label::after	{
+					margin-right: 10px;
+	}
+}
 @media (min-width: 630px){
 	.produto{
 		position: relative;
