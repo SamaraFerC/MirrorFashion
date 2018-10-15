@@ -1,31 +1,40 @@
+	<?php
+		$conexao	=	mysqli_connect("127.0.0.1",	"root",	"",	"WD43");
+		$dados	=	mysqli_query($conexao,	"SELECT	*	FROM	produtos");
+		$produto	=	mysqli_fetch_array($dados);
+	?>
 
 <body>
 	<?php include("cabecalho.php") ?>
 		<div class="produto-back">
 			<div class="container">
-				<div class="produto">
-					<h1>Fuzzy Cardigan</h1>
-					<p>Por apenas R$129,90</p>	
-
+				<div class="produto">	
+					<h1><?=	$produto['nome']	?></h1>
+					<p>por	apenas	<?=	$produto['preco']	?></p>
+					<div	class="fb-like" data-href="http://www.mirrorfashion.net"
+			data-send="false" data-layout="box_count"
+			data-width="58" data-show-faces="false"></div>
 					<form action="checkout.php" method="POST">
 						<input	type="hidden" name="nome" value="Fuzzy	Cardigan">
 						<input	type="hidden" name="preco" value="129,00">
+						<input	type="hidden"	name="id"	value="<?=	$produto['id']	?>">
+
 						<fieldset class="cores">
 							<legend> Escolha a cor:</legend>
 
 							<input type="radio" name="cor" value="verde" id="verde" checked>
 							<label for="verde">
-								<img src="img/produtos/foto1-verde.png" alt="Produto na cor verde">
+								<img	src="img/produtos/foto<?=	$produto['id']	?>-verde.png"alt="Produto na cor verde">
 							</label>
 
 							<input type="radio" name="cor" value="rosa" id="rosa">
 							<label for="rosa">
-								<img src="img/produtos/foto1-rosa.png" alt="Produto na cor rosa">
+								<img	src="img/produtos/foto<?=	$produto['id']	?>-azul.png"alt="Produto na cor rosa">
 							</label>
 
 							<input type="radio" name="cor" value="azul" id="azul">
 							<label for="azul">
-								<img src="img/produtos/foto1-azul.png" alt="Produto na cor azul">
+								<img	src="img/produtos/foto<?=	$produto['id']	?>-azul.png" alt="Produto na cor azul">
 							</label>
 						</fieldset>
 				
@@ -43,7 +52,7 @@
 
 				<div class="detalhes">
 					<h2>Detalhes	do	produto</h2>
-					<p>Esse	é	o	melhor	casaco	de	Cardigã	que	você	já	viu.	Excelente material	italiano	com	estampa	desenhada	pelos	artesãos	da comunidade de	Krotor	nas	ilhas	gregas.	Compre	já	e	receba	hoje mesmo	pela	nossa	entrega	a	jato.</p>
+					<p><?=	$produto['descricao']	?></p>
 
 					<table>	
 						<thead>
@@ -77,5 +86,16 @@
 		</div>		
 
 	<?php include("rodape.php") ?>
+	<div	id="fb-root"></div>
+		<script>(function(d,	s,	id) {
+			var	js,	fjs	=	d.getElementsByTagName(s)[0];
+			if	(d.getElementById(id))	return;
+				js	=	d.createElement(s);	js.id	=	id;
+				js.src	=	"http://connect.facebook.net/pt_BR/all.js#xfbml=1";
+				fjs.parentNode.insertBefore(js,	fjs);
+				}(document,	'script',	'facebook-jssdk'));
+		</script>
+		
+
 </body>
 </html>
