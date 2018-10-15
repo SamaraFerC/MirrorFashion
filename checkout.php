@@ -17,7 +17,6 @@
 			<button	class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent">
 				<span	class="navbar-toggler-icon"></span>
 			</button>
-			<a	class="navb
 			<a	class="navbar-brand" href="index.html">Mirror	Fashion</a>
 				<ul	class="navbar-nav">
 					<li	class="nav-item	active">
@@ -56,27 +55,24 @@
 							<img	src="img/produtos/foto1-verde.png" alt="Fuzzy	Cardigan" class="img-thumbnail	mb-3">
 							<dl>
 									<dt>Produto</dt>
-									<dd>Fuzzy	Cardigan</dd>
+									<dd><?=	$_POST['nome']	?></dd>									
 									<dt>Cor</dt>
-									<dd>Verde</dd>
+									<dd><?=	$_POST['cor']	?></dd>
 									<dt>Tamanho</dt>
-									<dd>40</dd>
+									<dd><?=	$_POST['tamanho']	?></dd>
 									<dt>Preço</dt>
-									<dd>R$129,90</dd>
+									<dd id="preco"><?=	$_POST['preco']	?></dd>
 							</dl>
 							<div class="form-group">
 								<label for="qtd">Quantidade</label>
-								<input type="number" id="qtd" min="1" max="99" value="1" class="form-control">
+								<input type="number" id="qtd" min="1" max="99" value="1" class="form-control">	
 							</div>
 
 							<div class="form-group">
 								<label for="total">Total</label>	
-								<output id="total" class="form-control">129,90</output>
+								<output for="qtd preco" id="total" class="form-control">129,90</output>
 							</div>
 						</div>
-						<dd id="preco">129,90</dd>
-
-						<output for="qtd preco" id="total" class="form-control">129,90</output>
 
 					</div>
 				</div>
