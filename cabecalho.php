@@ -25,7 +25,7 @@
 				<li><a href="#">Sua conta</a> </li>	
 				<li><a href="#">Lista de desejo</a></li>
 				<li><a href="#">Cartão felicidade</a> </li>
-				<li><a href="sobre.html">Sobre</a></li>
+				<li><a href="sobre.php">Sobre</a></li>
 				<li><a href="#">Ajuda</a></li>
 			</ul>
 		</nav>

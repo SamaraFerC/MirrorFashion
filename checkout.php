@@ -1,3 +1,8 @@
+	<?php
+		$conexao	=	mysqli_connect("127.0.0.1",	"root",	"",	"mirrorfashion");
+		$dados	=	mysqli_query($conexao,	"SELECT	*	FROM	produtos");
+		$produto	=	mysqli_fetch_array($dados);
+	?>
 <!doctype	html>
 <html>
 	<head>
@@ -17,10 +22,10 @@
 			<button	class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent">
 				<span	class="navbar-toggler-icon"></span>
 			</button>
-			<a	class="navbar-brand" href="index.html">Mirror	Fashion</a>
+			<a	class="navbar-brand" href="index.php">Mirror	Fashion</a>
 				<ul	class="navbar-nav">
 					<li	class="nav-item	active">
-						<a	class="nav-link" href="sobre.html">Sobre</a>
+						<a	class="nav-link" href="sobre.php">Sobre</a>
 					</li>
 					<li	class="nav-item">
 						<a	class="nav-link" href="#">Ajuda</a>
@@ -51,17 +56,19 @@
 							<h2>Sua	compra</h2>
 						</div>
 
+
+
 						<div class="card-body">
-							<img	src="img/produtos/foto1-verde.png" alt="Fuzzy	Cardigan" class="img-thumbnail	mb-3">
+							<img	src="img/produtos/miniatura<?=$produto['id'] ?>.png" alt="Fuzzy	Cardigan" class="img-thumbnail	mb-3">
 							<dl>
 									<dt>Produto</dt>
-									<dd><?=	$_POST['nome']	?></dd>									
+									<dd><?=	$produto['nome']	?></dd>									
 									<dt>Cor</dt>
 									<dd><?=	$_POST['cor']	?></dd>
 									<dt>Tamanho</dt>
 									<dd><?=	$_POST['tamanho']	?></dd>
 									<dt>Preço</dt>
-									<dd id="preco"><?=	$_POST['preco']	?></dd>
+									<dd id="preco"><?=$produto['preco']	?></dd>
 							</dl>
 							<div class="form-group">
 								<label for="qtd">Quantidade</label>
