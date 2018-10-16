@@ -1,6 +1,6 @@
 	<?php
 		$conexao	=	mysqli_connect("127.0.0.1",	"root",	"",	"mirrorfashion");
-		$dados	=	mysqli_query($conexao,	"SELECT	*	FROM	produtos");
+		$dados	=	mysqli_query($conexao,	"SELECT		* FROM	produtos WHERE id= $_GET[id]");
 		$produto	=	mysqli_fetch_array($dados);
 	?>
 
@@ -18,7 +18,6 @@
 
 					<form action="checkout.php" method="POST">
 						<input	type="hidden"	name="id"	value="<?=	$produto['id']	?>">
-					
 						
 						<fieldset class="cores">
 							<legend> Escolha a cor:</legend>
@@ -103,7 +102,7 @@
 			fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 			</script>
 			<script	type="text/javascript">
-				window.___gcfg	=	{lang:	'pt-BR'};
+			window.___gcfg	=	{lang:	'pt-BR'};
 				(function() {
 				var	po	=	document.createElement('script');
 				po.type	=	'text/javascript';
